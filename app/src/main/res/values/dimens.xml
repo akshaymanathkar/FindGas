@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="view_size_50_dip">50dip</dimen>
+    <dimen name="view_size_30_dip">50dip</dimen>
+    <dimen name="view_size_20_dip">20dip</dimen>
+    <dimen name="view_size_10_dip">10dip</dimen>
+
+    <dimen name="text_size_17_sp">17sp</dimen>
+    <dimen name="text_size_15_sp">15sp</dimen>
+    <dimen name="text_size_12_sp">12sp</dimen>
+
+
+    <dimen name="padding_15_dip">15dp</dimen>
+    <dimen name="padding_5_dip">5dip</dimen>
+    <dimen name="padding_4_dip">4dip</dimen>
+    <dimen name="padding_3_dip">3dip</dimen>
+    <dimen name="padding_2_dip">2dip</dimen>
+    <dimen name="padding_1_dip">1dip</dimen>
+
+    <dimen name="margin_15_dip">15dp</dimen>
+    <dimen name="margin_10_dip">10dip</dimen>
+    <dimen name="margin_5_dip">5dip</dimen>
+    <dimen name="margin_3_dip">3dip</dimen>
+    <dimen name="margin_2_dip">2dip</dimen>
+    <dimen name="margin_1_dip">1dip</dimen>
+</resources>

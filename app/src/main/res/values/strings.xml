@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FindGas</string>
+    <string name="title_activity_find_gas">FindGas</string>
+    <string name="sort_by">Sort By:</string>
+    <string name="sort_by_distance">Distance</string>
+    <string name="sort_by_price">Price</string>
+    <string name="country">Country:</string>
+    <string name="regular_price">Regular price:</string>
+    <string name="mid_price">Mid price:</string>
+    <string name="pre_price">Pre price:</string>
+    <string name="address">Address:</string>
+    <string name="diesel">Diesel:</string>
+    <string name="id">Id:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="station">Station:</string>
+    <string name="region">Region:</string>
+    <string name="city">City:</string>
+    <string name="reg_date">Reg date:</string>
+    <string name="mid_date">Mid date:</string>
+    <string name="pre_date">Pre date:</string>
+    <string name="diesel_date">Diesel date:</string>
+    <string name="distance">Distance:</string>
+</resources>
