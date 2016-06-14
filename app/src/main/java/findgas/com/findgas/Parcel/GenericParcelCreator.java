@@ -13,28 +13,28 @@ import java.util.ArrayList;
  */
 public class GenericParcelCreator<T> implements Parcelable.Creator {
     private Class<T> responseClass;
-    private InstanceGenerator<T> instanceGenerator;
+    private ObjectInstanceGenerator<T> objectInstanceGenerator;
 
 
-    public GenericParcelCreator(Class<T> responseClass, InstanceGenerator<T> instanceGenerator) {
+    public GenericParcelCreator(Class<T> responseClass, ObjectInstanceGenerator<T> objectInstanceGenerator) {
         this.responseClass = responseClass;
-        this.instanceGenerator = instanceGenerator;
+        this.objectInstanceGenerator = objectInstanceGenerator;
     }
 
-    public AbstractGenericParcelable<T> createFromParcel(Parcel in) {
+    public GenericParcelable<T> createFromParcel(Parcel in) {
         Gson gson = new GsonBuilder()
                 .create();
         String jsonString = in.readString();
         T object = gson.fromJson(jsonString, responseClass);
-        return instanceGenerator.getInstance(object);
+        return objectInstanceGenerator.getInstance(object);
     }
 
-    public AbstractGenericParcelable<T>[] newArray(int size) {
-        return (AbstractGenericParcelable<T>[]) new ArrayList<>(size).toArray();
+    public GenericParcelable<T>[] newArray(int size) {
+        return (GenericParcelable<T>[]) new ArrayList<>(size).toArray();
     }
 
-    public interface InstanceGenerator<T> {
-        AbstractGenericParcelable<T> getInstance(T object);
+    public interface ObjectInstanceGenerator<T> {
+        GenericParcelable<T> getInstance(T object);
     }
 }
 

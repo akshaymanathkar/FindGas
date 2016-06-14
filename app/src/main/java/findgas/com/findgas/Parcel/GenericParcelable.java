@@ -9,10 +9,10 @@ import com.google.gson.GsonBuilder;
 /**
  * Created by akshaymanathkar on 31/05/16.
  */
-public abstract class AbstractGenericParcelable<T> implements Parcelable {
+public abstract class GenericParcelable<T> implements Parcelable {
     private T object;
 
-    public AbstractGenericParcelable(T object) {
+    public GenericParcelable(T object) {
         this.object = object;
     }
 
